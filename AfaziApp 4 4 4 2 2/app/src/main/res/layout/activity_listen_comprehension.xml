@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListenComprehensionActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/allRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeL"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bgtop">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ic_black_back" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/logo2"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeL"
+            android:textColor="@android:color/transparent"
+            android:text=""/>
+
+
+        <RelativeLayout
+            android:id="@+id/listenRl"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true">
+
+
+            <ImageButton
+                android:id="@+id/soundIb"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_volume"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hikayeyi dinle, soruları cevapla."
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="50dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/scorTv"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/listenRl"
+            android:layout_marginTop="40dp"
+            android:elevation="1dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/comprehension2"
+            android:text="1/3"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:id="@+id/questionRl"
+            android:layout_width="350dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/listenRl"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/comprehension">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soru:"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/questionTv"
+                android:layout_width="270dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option1"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/comprehension_option"
+            android:layout_below="@id/questionRl"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option2"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/comprehension_option"
+            android:layout_below="@id/option1"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option3"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/comprehension_option"
+            android:layout_below="@id/option2"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option4"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/comprehension_option"
+            android:layout_below="@id/option3"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nextBtn"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:text="ilerle"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/comprehension_button"
+            android:layout_below="@id/option4"
+            android:layout_marginTop="50dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/newStoryRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DDD3C1"
+       >
+
+
+
+        <TextView
+            android:id="@+id/scorRltv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tebrikler! Hikayeyi Bitirdiniz. Doğru Sayısı: 0 \n Yanlış sayısı:0 "
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"/>
+
+
+
+
+        <ImageView
+            android:layout_marginTop="250dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/elephant_ballon"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/nextStoryBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comprehension_button"
+            android:text="yeni hikaye"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="550dp"/>
+
+        <Button
+            android:id="@+id/againStoryBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comprehension_btn2"
+            android:layout_below="@id/nextStoryBtn"
+            android:text="tekrar çöz"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

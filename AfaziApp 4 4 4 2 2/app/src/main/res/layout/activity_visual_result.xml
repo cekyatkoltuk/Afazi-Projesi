@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VisualResultActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/newLevelRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DDD3C1">
+
+
+
+        <TextView
+            android:id="@+id/scorRltv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tebrikler! 1.Bölümü Bitirdiniz. Doğru Sayısı: 0 \n Yanlış sayısı:0 "
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"/>
+
+
+
+
+        <ImageView
+            android:layout_marginTop="250dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/elephant_ballon"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/newLevel"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comprehension_button"
+            android:text="yeni bölüm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="550dp"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/againLevelBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comprehension_btn2"
+            android:layout_below="@id/newLevel"
+            android:text="tekrar çöz"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

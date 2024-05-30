@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotesAddActivity">
+    <RelativeLayout
+        android:id="@+id/relativeL"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bgtop">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_black_back" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo2"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/saveRl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/relativeL">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni bir not oluştur"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textSize="30dp"
+            android:layout_marginStart="45dp"
+            android:textColor="@color/black"/>
+
+        <ImageButton
+            android:id="@+id/saveNote"
+            android:background="@android:color/transparent"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_check"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="330dp"/>
+
+
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/saveRl"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/notes_bg">
+
+        <EditText
+            android:id="@+id/noteTitle"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Başlık"
+            android:layout_marginTop="25dp"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/noteContent"
+            android:layout_width="300dp"
+            android:layout_height="370dp"
+            android:layout_below="@id/noteTitle"
+            android:textColor="@color/black"
+            android:gravity="top"
+            android:textSize="25sp"
+            android:minLines="15"
+            android:hint="Not"
+            android:layout_centerHorizontal="true"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

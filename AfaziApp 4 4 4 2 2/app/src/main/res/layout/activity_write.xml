@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bgtop">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_black_back" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo2"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/readRl"
+        android:layout_width="350dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true">
+
+
+        <ImageButton
+            android:id="@+id/soundIb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_volume"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sesi dinle, duyduğunu yaz."
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="50dp"/>
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/writeText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_below="@id/soundIb"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/textTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/writeText"
+            android:text=""
+            android:textColor="@color/white"/>
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/controlBtn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/readRl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button3"
+        android:text="kontrol et"
+        android:textSize="20sp"
+        />
+
+
+</RelativeLayout>

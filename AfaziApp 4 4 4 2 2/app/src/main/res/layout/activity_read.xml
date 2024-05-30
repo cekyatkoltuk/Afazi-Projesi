@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bgtop">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_black_back" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo2"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/readRl"
+        android:layout_width="350dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/textTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:text=""
+            android:layout_marginStart="60dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="90dp">
+
+            <TextView
+                android:id="@+id/speechText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="50dp"/>
+
+            <ImageButton
+                android:id="@+id/voiceBtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ic_mic"
+                />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/controlBtn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/readRl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button3"
+        android:text="kontrol et"
+        android:textSize="20sp"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

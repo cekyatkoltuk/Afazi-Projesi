@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "205521130557",
+    "project_id": "afazi-app",
+    "storage_bucket": "afazi-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205521130557:android:fd027b89865cbc7ca3c654",
+        "android_client_info": {
+          "package_name": "com.aze.afaziapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205521130557-6s999iroc2aog1rrict55pm2geom7tfa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkZdymeSLK-GqH2C_Qj1ujWVJ-RzhNe3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205521130557-6s999iroc2aog1rrict55pm2geom7tfa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
